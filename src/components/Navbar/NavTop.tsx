@@ -9,6 +9,8 @@ const NavBarTop = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.253);
+    z-index: 1;
     .banner {
         max-width: 57rem;
         display: flex;
@@ -28,8 +30,8 @@ const NavBarTop = styled.div`
         .active {
             background-color: var(--nav-main-color);
             /* setup box shadow from the left and right sides */
-            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075),
-                0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.26),
+                0 -0.125rem 0.25rem rgba(0, 0, 0, 0.24);
         }
         .active:hover {
             animation-name: none;
