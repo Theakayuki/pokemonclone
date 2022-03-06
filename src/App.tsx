@@ -8,9 +8,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <BodyContainer>
-                <h1>This is an test</h1>
-            </BodyContainer>
+            <BodyContainer></BodyContainer>
         </>
     );
 }

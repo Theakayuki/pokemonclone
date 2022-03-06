@@ -8,6 +8,9 @@ const NavbarContainer = styled.div`
     padding: 0;
     background-color: var(--nav-bg-color);
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    position: relative;
+    z-index: 10;
+    border-bottom: 2px solid #f0f0f0;
 `;
 
 const Navbar = () => {
