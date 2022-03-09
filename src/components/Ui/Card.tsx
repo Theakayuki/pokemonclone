@@ -44,6 +44,10 @@ const CardStyle = styled.div<{
         line-height: 125%;
         margin-left: 1.25em;
     }
+    &:hover {
+        transition: all 0.5s ease;
+        animation: Bumpup 0.1s ease;
+    }
 `;
 
 type CardProps = {

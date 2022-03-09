@@ -101,6 +101,10 @@ const BodyContainerStyle = styled.div`
                     transform: rotate(180deg);
                 }
             }
+            &:hover {
+                transition: all 0.5s ease;
+                animation: Bumpup 0.1s ease;
+            }
         }
     }
 `;

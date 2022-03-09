@@ -31,7 +31,20 @@ html{
     font-family: 'Flexo-Regular';
     src: url('href="//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo');
 }
-
+@keyframes Bumpup {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-5px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
     //setup variables for color
     :root {
         --nav-bg-color: #f5f5f5;
