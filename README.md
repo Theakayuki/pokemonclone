@@ -9,5 +9,6 @@ Snapshot is from the 3/4/2022 version of the website
 | React            | To save boilerplate                                               |
 | TypeScript       | Making sure we have proper typing, and easier reuse of components |
 | StyledComponents | Styling from within the components, lessing open pages            |
+| React-Slick | Make the slider |
 
 With these Technologies I was able to rebuild the homepage in React.
