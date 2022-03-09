@@ -24,7 +24,7 @@ const Dashboard = styled.div`
         cursor: pointer;
     }
     .Dashboard-container::before {
-        background: transparent url(${require('../../img/profile-nav-bg.png')}) top -34px;
+        background: transparent url(${require('../../img/profile-nav-bg.png')}) left -34px;
         /* background-color: blue; */
         background-size: 100%;
         content: ' ';

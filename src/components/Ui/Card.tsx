@@ -49,12 +49,19 @@ const CardStyle = styled.div<{
 type CardProps = {
     children?: any;
     className?: string;
+    /** Use the file Name only, we are referencing the img directory */
     imgName: string;
+    /** Input the main title/description */
     title?: string;
+    /** Input the subtitle */
     subtitle?: string;
+    /** Direction of the card, accepts row and column */
     Direction?: string;
+    /** Background color of the card, Accepts and css color */
     BackGroundColor?: string;
+    /** Large card, apply if card is 100% width */
     Large?: boolean;
+    /** Half card, apply if card is 50% width */
     half?: boolean;
 };
 
