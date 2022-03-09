@@ -27,6 +27,11 @@ html{
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Flexo-Regular';
+    src: url('href="//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo');
+}
+
     //setup variables for color
     :root {
         --nav-bg-color: #f5f5f5;

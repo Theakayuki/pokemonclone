@@ -6,9 +6,13 @@ const Dashboard = styled.div`
     top: 161px;
     width: 59px;
     max-width: 1280px;
-    height: 100%;
+    height: 45%;
     z-index: 17;
     overflow: hidden;
+    @media (min-width: 1281px) and (max-width: 9999px) {
+        left: 50%;
+        margin-left: -640px;
+    }
     .Dashboard-container {
         background-image: url(${require('../../img/profile-nav-repeat-bg.png')});
         background-repeat: repeat-y;
@@ -20,7 +24,7 @@ const Dashboard = styled.div`
         cursor: pointer;
     }
     .Dashboard-container::before {
-        background: transparent url(${require('../../img/profile-nav-bg.png')}) left -34px;
+        background: transparent url(${require('../../img/profile-nav-bg.png')}) top -34px;
         /* background-color: blue; */
         background-size: 100%;
         content: ' ';
