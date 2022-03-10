@@ -1,5 +1,5 @@
-import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
 import Slide from '../Ui/Slide';
 import Slider from 'react-slick';
@@ -53,6 +53,28 @@ const SliderStyle = styled.div`
                         font-family: arial, sans-serif;
                         font-size: 20px;
                         display: inline;
+                    }
+                }
+            }
+            @media (max-width: 767px) {
+                .title-position {
+                    float: none;
+                    margin: 0 auto;
+                    width: 100%;
+                    .title-box {
+                        float: none;
+                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+                        .icon-Pokeball {
+                            &:before {
+                                content: '\f12a';
+                                font-family: 'icon';
+                                font-size: 20px;
+                                color: #ffffff;
+                                display: inline;
+                            }
+                        }
                     }
                 }
             }
@@ -115,6 +137,20 @@ const SliderStyle = styled.div`
                 font-family: 'Flexo-Demi', arial, sans-serif;
                 width: 12rem;
                 margin-right: 14rem;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .slider-More-wrapper {
+            .slider-More {
+                float: none;
+                .slider-More-text {
+                    float: none;
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 1.5625rem;
+                }
             }
         }
     }
@@ -192,6 +228,15 @@ const Sliders = () => {
                         rows={1}
                         prevArrow={<PrevArrow />}
                         nextArrow={<NextArrow />}
+                        responsive={[
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                        ]}
                     >
                         <Slide
                             BgNumber='033'

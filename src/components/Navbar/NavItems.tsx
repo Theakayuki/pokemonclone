@@ -48,7 +48,7 @@ export const NavItems = styled.li<{
         color: #898989;
         .icon-link::before {
             /* content: '\f11f'; */
-            content: ${(props) => (props.Content ? props.Content : '"\f11f"')};
+            content: ${(props) => (props.Content ? props.Content : '')};
         }
         .fill {
             display: block;
@@ -104,5 +104,11 @@ export const NavItems = styled.li<{
             `
             border-radius: 0 0 8px 0;
             `}
+    }
+    @media (max-width: 767px) {
+        .icon-link::before {
+            content: none;
+            display: none;
+        }
     }
 `;

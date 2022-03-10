@@ -39,6 +39,25 @@ const NavBottomContainer = styled.div<{ Scrolled: boolean }>`
             }
         }
     }
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        height: 57px !important;
+        .menu-wrap {
+            ul {
+                li {
+                    margin: 0 auto;
+                    height: 57px !important;
+                    .menu-link {
+                        height: 57px !important;
+                        justify-content: center;
+                        .title {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 `;
 
 const NavBottom = () => {

@@ -48,6 +48,10 @@ const CardStyle = styled.div<{
         transition: all 0.5s ease;
         animation: Bumpup 0.1s ease;
     }
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+    }
 `;
 
 type CardProps = {

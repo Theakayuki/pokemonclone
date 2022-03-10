@@ -107,6 +107,42 @@ const BodyContainerStyle = styled.div`
             }
         }
     }
+    @media (max-width: 1024px) {
+        .Mosaic {
+            flex-direction: column;
+            margin: 0 auto;
+            .column1 {
+                max-width: 100%;
+                margin: 0 auto;
+                padding-right: 0;
+            }
+            .column2 {
+                max-width: 100%;
+                margin: 0 auto;
+                padding-right: 0;
+            }
+            .column3 {
+                width: 100%;
+                &:nth-child(1) {
+                    margin-right: 0;
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    margin-left: 0;
+                    margin-top: 0;
+                }
+                .text-container {
+                    margin-top: 0;
+                    float: left;
+                }
+                .News-Container {
+                    margin-top: 0;
+                    float: left;
+                    width: 100%;
+                }
+            }
+        }
+    }
 `;
 
 const BodyContainer = (props: any) => {

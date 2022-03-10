@@ -84,6 +84,9 @@ const NavBarTop = styled.div`
             transform: translateY(0);
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const NavTop = () => {
